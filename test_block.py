@@ -1,8 +1,8 @@
 import pytest
-import gantt
+import block
 
 def test_add_task():
-    task_block = gantt.Task(["Name", "Lead", "Start", "End"])
+    task_block = block.Task(["Name", "Lead", "Start", "End"])
     task_block.add_task(Name="Task 1", Lead="Bob", Start="1/1/2020", End="1/2/2020")
 
     assert task_block.width() == 4
